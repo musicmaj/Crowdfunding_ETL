@@ -1,2 +1,4 @@
-# project_2_group_15
-Project 2
+# project-2-group-15
+Kade Rivers
+Teylor Tippins
+Amar Patil
