@@ -1,4 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/KCnfLJ
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
@@ -9,7 +9,7 @@
 CREATE TABLE "category" (
     "category_id" VARCHAR(4)   NOT NULL,
     "category" VARCHAR(20)   NOT NULL,
-    "last_updated" timestamp   NOT NULL,
+    "last_updated" timestamp  default localtimestamp  NOT NULL,
     CONSTRAINT "pk_category" PRIMARY KEY (
         "category_id"
      )
@@ -18,7 +18,7 @@ CREATE TABLE "category" (
 CREATE TABLE "subcategory" (
     "subcategory_id" VARCHAR(8)   NOT NULL,
     "subcategory" VARCHAR(20)   NOT NULL,
-    "last_updated" timestamp   NOT NULL,
+    "last_updated" timestamp  default localtimestamp  NOT NULL,
     CONSTRAINT "pk_subcategory" PRIMARY KEY (
         "subcategory_id"
      )
@@ -29,7 +29,7 @@ CREATE TABLE "contacts" (
     "first_name" VARCHAR(20)   NOT NULL,
     "last_name" VARCHAR(20)   NOT NULL,
     "email" VARCHAR(80)   NOT NULL,
-    "last_updated" timestamp   NOT NULL,
+    "last_updated" timestamp  default localtimestamp  NOT NULL,
     CONSTRAINT "pk_contacts" PRIMARY KEY (
         "contact_id"
      )
@@ -52,7 +52,7 @@ CREATE TABLE "campaign" (
     "spotlight" bool   NOT NULL,
     "category_id" VARCHAR(4)   NOT NULL,
     "subcategory_id" VARCHAR(20)   NOT NULL,
-    "last_updated" timestamp   NOT NULL,
+    "last_updated" timestamp  default localtimestamp  NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
         "cf_id"
      )
