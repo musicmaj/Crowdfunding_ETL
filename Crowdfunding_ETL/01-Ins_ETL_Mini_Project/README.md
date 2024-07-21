@@ -1,7 +1,6 @@
 # ETL Mini Project
 
-The ETL mini project instructions and requirements are located on Canvas.
+This project is based on data and information provided by the Data Analytics Bootcamp, and all groups were provided the same information and task for an ETL (Extract, Transform, Load) mini project where partners or small groups were to create an ETL pipeline using Python, Pandas, and dictionary methods or expressions to complete the project. Deliverables include an ERD Diagram, Jupyter Notebooks to show data extraction, transformation, load, and the creation of multiple data frames and visualizations in order to best  analyze the given data.
 
----
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
